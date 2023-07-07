@@ -15,7 +15,7 @@ echo 3. Een nieuwe sub-sleutel InprocServer32 wordt gemaakt.
 reg add "%RegKey%\InprocServer32" /f >nul
 
 echo 4. De waarde van de sub-sleutel InprocServer32 wordt leeggemaakt.
-reg add "%RegKey%\InprocServer32" /ve /d "" /f >nul
+reg add "%RegKey%\InprocServer32" /ve /d "" /f
 
 echo De wijzigingen zijn aangebracht. Je moet opnieuw aanmelden om de wijzigingen door te voeren.
 echo.
