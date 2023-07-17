@@ -6,7 +6,7 @@ REM Stap 1: Windows Update-service stoppen.
 net stop wuauserv >nul
 
 REM Stap 2: Tijdelijke bestanden verwijderen.
-del /q /s /f "%temp%\*" "%systemroot%\Temp\*" "%systemroot%\Prefetch\*"
+rmdir /q /s /f "%temp%\*" "%systemroot%\Temp\*" "%systemroot%\Prefetch\*"
 
 REM Stap 3: Windows Update-cache verwijderen.
 rmdir /q /s "%systemroot%\SoftwareDistribution\Download"
